@@ -1,4 +1,4 @@
-# CHAMO: Pipeline Híbrido para Generación de Avatares 3D desde una Imagen
+# Pipeline Híbrido para Generación de Avatares 3D desde una Imagen
 
 ## Descripción
 
