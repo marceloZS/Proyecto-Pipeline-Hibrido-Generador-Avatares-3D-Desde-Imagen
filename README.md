@@ -2,17 +2,17 @@
 
 ## Descripción
 
-El desarrollo eficiente y automático de avatares 3D animables desde imágenes individuales es un desafío crucial en aplicaciones emergentes como la realidad aumentada (AR) y virtual (VR). Este informe detalla el proyecto **CHAMO**, que propone un pipeline híbrido combinando **Gaussian Splatting**, **modelos de difusión avanzados** y técnicas modernas de **aprendizaje automático**.
+El desarrollo eficiente y automático de avatares 3D animables desde imágenes individuales es un desafío crucial en aplicaciones emergentes como la realidad aumentada (AR) y virtual (VR). Este informe detalla el proyecto, que propone un pipeline híbrido combinando **Gaussian Splatting**, **modelos de difusión avanzados** y técnicas modernas de **aprendizaje automático**.
 
-CHAMO facilita la generación de modelos tridimensionales detallados y animables a partir de una sola imagen, asegurando la reproducibilidad y accesibilidad gracias al uso exclusivo de herramientas de código abierto (open-source). 
+El proyecto facilita la generación de modelos tridimensionales detallados y animables a partir de una sola imagen, asegurando la reproducibilidad y accesibilidad gracias al uso exclusivo de herramientas de código abierto (open-source). 
 
 ## Objetivos del Proyecto
 
 -   #### Generar un avatar 3D de cuerpo completo desde una sola imagen.
-    El principal objetivo del proyecto CHAMO es generar un avatar tridimensional integral que represente con fidelidad el cuerpo completo de un individuo utilizando únicamente una imagen de entrada. Este desafío implica extraer de la imagen original información precisa sobre geometría, postura, detalles faciales, texturas y características de vestimenta para construir un modelo 3D animable y robusto.
+    El principal objetivo del proyecto es generar un avatar tridimensional integral que represente con fidelidad el cuerpo completo de un individuo utilizando únicamente una imagen de entrada. Este desafío implica extraer de la imagen original información precisa sobre geometría, postura, detalles faciales, texturas y características de vestimenta para construir un modelo 3D animable y robusto.
 
 -   #### Lograr calidad visual comparable a escaneos multivista.
-    Otro objetivo fundamental es lograr una calidad visual comparable a la obtenida mediante métodos tradicionales de escaneo multivista, que generalmente requieren múltiples cámaras y configuraciones controladas. CHAMO busca igualar o superar estos estándares con tecnologías avanzadas como Gaussian Splatting y Hunyuan3D-2 para capturar detalles finos y texturas realistas.
+    Otro objetivo fundamental es lograr una calidad visual comparable a la obtenida mediante métodos tradicionales de escaneo multivista, que generalmente requieren múltiples cámaras y configuraciones controladas. Este proyecto busca igualar o superar estos estándares con tecnologías avanzadas como Gaussian Splatting y Hunyuan3D-2 para capturar detalles finos y texturas realistas.
 
 -   #### Inferencia en tiempo sub-minuto en una GPU de consumo.
     La eficiencia del proceso es clave, por lo que el pipeline está diseñado para realizar inferencias en tiempos inferiores al minuto utilizando GPUs estándar disponibles en el mercado, específicamente modelos como la NVIDIA RTX 4090. Esta característica garantiza que la solución sea viable en aplicaciones prácticas y no solo en ambientes académicos o experimentales.
@@ -25,7 +25,7 @@ CHAMO facilita la generación de modelos tridimensionales detallados y animables
 
 ## Trabajos Relacionados y Fundamentos
 
-El proyecto CHAMO integra y se basa en técnicas avanzadas previamente desarrolladas en el campo de la computación gráfica y la inteligencia artificial:
+El proyecto integra y se basa en técnicas avanzadas previamente desarrolladas en el campo de la computación gráfica y la inteligencia artificial:
 
 -   **Reconstrucción 3D desde una imagen:** Se inspira en técnicas como PIFu, ICON, Magic123 y DreamHuman.
 -   **Gaussian Splatting:** Utiliza como referencia clave el trabajo de 3DGS (Inria) y NeuS-Splats.
@@ -267,7 +267,7 @@ La línea `uvicorn.run(app, host=args.host, port=args.port, workers=1)` realiza 
 
 ## Resultados
 
-CHAMO genera avatares visualmente ricos y detallados, compatibles con formatos y plataformas estándar. La calidad visual iguala a la de técnicas más complejas y costosas, validando la efectividad del pipeline híbrido propuesto.
+El proyecto genera avatares visualmente ricos y detallados, compatibles con formatos y plataformas estándar. La calidad visual iguala a la de técnicas más complejas y costosas, validando la efectividad del pipeline híbrido propuesto.
 
 -   **Avatar 3D de alta calidad** generado desde una sola imagen.
 -   **Tiempo de inferencia inferior a 1 minuto** en una GPU NVIDIA RTX 4090.
@@ -310,7 +310,7 @@ Se reconocen limitaciones específicas, incluyendo:
 
 ## Conclusiones y Futuro
 
-El proyecto CHAMO ha demostrado la eficacia de integrar técnicas modernas en un pipeline reproducible y modular para generar avatares 3D. El pipeline unifica con éxito lo mejor de varias metodologías de código abierto, y la representación gaussiana subyacente permite un renderizado muy eficiente.
+El proyecto ha demostrado la eficacia de integrar técnicas modernas en un pipeline reproducible y modular para generar avatares 3D. El pipeline unifica con éxito lo mejor de varias metodologías de código abierto, y la representación gaussiana subyacente permite un renderizado muy eficiente.
 
 Futuros trabajos deberían centrarse en abordar las limitaciones actuales, explorando técnicas avanzadas de auto-supervisión, el manejo de múltiples poses de forma simultánea y la mejora del tratamiento de materiales complejos y deformables.
 
